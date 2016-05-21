@@ -1,3 +1,2 @@
 # services
-
-Create for training services.
+Created for training services
