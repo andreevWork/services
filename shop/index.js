@@ -1,7 +1,7 @@
 var express = require('express'),
     server = express(),
     mongoose = require('mongoose'),
-    PORT = 3001,
+    PORT = 80,
     NotebookSchema = require('./shema.js').NotebookSchema;
     db = mongoose.connect('mongodb://localhost/test').connection,
     NotebookFieldsForDrawingFilter = require('./shema.js').NotebookFieldsForDrawingFilter;
