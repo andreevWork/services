@@ -1,2 +1,2 @@
 # services
-Created for training services
+Repository created for training services, which returns testing data.
