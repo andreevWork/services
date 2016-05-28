@@ -58,3 +58,43 @@
 ------------------------------------------
 
 ## Request for data http://62.109.12.135/notebooks 
+
+Данный запрос возвращает данные в формате: 
+
+```javascript
+{
+ data: массив значений, состоит из объектов с данными формата:
+  {
+    name: String,
+    price: Number,
+    material: Array,
+    weight: Number,
+    rating: Number,
+    screen_size: Number,
+    processor: String,
+    ORM: Number,
+    MORM: Number,
+    lighting_keyboard: Boolean,
+    video_memory: String,
+    color: Array
+  }
+ все поля у всех объектов всегда заполенны, никаких null или undefined.
+ 
+ count: число всех записей удовлетворяющих запросу, если параметр "skip" не задан или равен нулю. Если "skip" задан и он больше нуля, вернет число только переданных записей, то есть data.length. 
+}
+```
+Данные, которые вернет запрос, можно фильтровать и сортировать с помощью данных которые возвращают выше описанные запросы.
+
+Также имеется два дополнительных поля:
+* skip - число записей, которое необходимо пропустить.
+* limit - число записей, которое необходимо вернуть. Если передан 0 - будут переданы все записи. 
+
+Несколько примеров запросов с использованием всех параметров:
+
+http://62.109.12.135/notebooks?price_from=110000&sort=price&sort_direction=1
+
+http://62.109.12.135/notebooks?weight_from=4.5&processor[]=AMD%20Opteron%205300&processor[]=intel%20core%20i5&ORM=16
+
+http://62.109.12.135/notebooks?weight_from=4.5&processor=AMD%20Opteron%205300&ORM=16&sort=rating&sort_direction=1
+
+http://62.109.12.135/notebooks?weight_from=4.5&processor=AMD%20Opteron%205300&ORM=16&sort=rating&sort_direction=1&skip=10&limit=5
