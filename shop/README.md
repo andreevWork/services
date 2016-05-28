@@ -1,5 +1,7 @@
 # Service to return data like a API
 
+Все запросы возвращают данные в формате JSON. 
+
 ## Request fields fot filter http://62.109.12.135/notebooks/filter_fields
 
  Запрос вернет массив объектов из которых будет делаться фильтрация на клиенте.
