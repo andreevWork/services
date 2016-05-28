@@ -1,6 +1,6 @@
 # Service to return data like a API
 
-Request fields fot filter http://62.109.12.135/notebooks/filter_fields
+## Request fields fot filter http://62.109.12.135/notebooks/filter_fields
 
  Запрос вернет массив объектов из которых будет делаться фильтрация на клиенте.
 
@@ -35,7 +35,7 @@ Request fields fot filter http://62.109.12.135/notebooks/filter_fields
  ```
 ------------------------------------------
 
-Request fields fot sort http://62.109.12.135/notebooks/sort_fields
+## Request fields fot sort http://62.109.12.135/notebooks/sort_fields
 
 Запрос вернет массив объектов из которых будет делаться сортировка на клиенте.
 
@@ -57,4 +57,4 @@ Request fields fot sort http://62.109.12.135/notebooks/sort_fields
  
 ------------------------------------------
 
-Request for data http://62.109.12.135/notebooks 
+## Request for data http://62.109.12.135/notebooks 
