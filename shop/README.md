@@ -2,7 +2,7 @@
 
 Все запросы возвращают данные в формате JSON. 
 
-## Request fields fot filter http://62.109.12.135/notebooks/filter_fields
+## Request fields fot filter http://62.109.12.135:3002/notebooks/filter_fields
 
  Запрос вернет массив объектов из которых будет делаться фильтрация на клиенте.
 
@@ -37,7 +37,7 @@
  ```
 ------------------------------------------
 
-## Request fields fot sort http://62.109.12.135/notebooks/sort_fields
+## Request fields fot sort http://62.109.12.135:3002/notebooks/sort_fields
 
 Запрос вернет массив объектов из которых будет делаться сортировка на клиенте.
 
@@ -59,7 +59,7 @@
  
 ------------------------------------------
 
-## Request for data http://62.109.12.135/notebooks 
+## Request for data http://62.109.12.135:3002/notebooks 
 
 Данный запрос возвращает данные в формате: 
 
@@ -93,10 +93,10 @@
 
 Несколько примеров запросов с использованием всех параметров:
 
-http://62.109.12.135/notebooks?price_from=110000&sort=price&sort_direction=1
+http://62.109.12.135:3002/notebooks?price_from=110000&sort=price&sort_direction=1
 
-http://62.109.12.135/notebooks?weight_from=4.5&processor[]=AMD%20Opteron%205300&processor[]=intel%20core%20i5&ORM=16
+http://62.109.12.135:3002/notebooks?weight_from=4.5&processor[]=AMD%20Opteron%205300&processor[]=intel%20core%20i5&ORM=16
 
-http://62.109.12.135/notebooks?weight_from=4.5&processor=AMD%20Opteron%205300&ORM=16&sort=rating&sort_direction=1
+http://62.109.12.135:3002/notebooks?weight_from=4.5&processor=AMD%20Opteron%205300&ORM=16&sort=rating&sort_direction=1
 
-http://62.109.12.135/notebooks?weight_from=4.5&processor=AMD%20Opteron%205300&ORM=16&sort=rating&sort_direction=1&skip=10&limit=5
+http://62.109.12.135:3002/notebooks?weight_from=4.5&processor=AMD%20Opteron%205300&ORM=16&sort=rating&sort_direction=1&skip=10&limit=5
