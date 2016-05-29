@@ -24,6 +24,11 @@ Notebook = mongoose.model('Notebook', NotebookSchema);
 filter_keys = getFilterFeys();
 sort_keys = geSortFeys();
 
+server.all('/*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    next();
+});
+
 server.get('/notebooks/filter_fields', function (req, res) {
     res.json(NotebookFieldsForFilter);
 });
