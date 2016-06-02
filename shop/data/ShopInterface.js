@@ -135,7 +135,7 @@ exports.NotebookFieldsForSort = [
  *
  * Формат объекта:
  * {
- *  key: название поля в GET запросе, может принимать массив значений
+ *  query_key: название поля в GET запросе, может принимать массив значений
  *  values: значение(я) для поля
  *  text: текст для фильтра
  * }
@@ -154,7 +154,7 @@ exports.NotebookFieldsForFilter = [
     {
         type: TYPES.CHECK,
         values: MATERIAL_ARRAY,
-        key: KEYS.MATERIAL,
+        query_key: KEYS.MATERIAL,
         text: 'Материал'
     },
     {
@@ -178,13 +178,13 @@ exports.NotebookFieldsForFilter = [
     {
         type: TYPES.CHECK,
         values: PROCESSOR_ARRAY,
-        key: KEYS.PROCESSOR,
+        query_key: KEYS.PROCESSOR,
         text: 'Процессор'
     },
     {
         type: TYPES.CHECK,
         values: ORM_ARRAY,
-        key: KEYS.ORM,
+        query_key: KEYS.ORM,
         text: 'Оперативная память'
     }
 ];
