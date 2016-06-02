@@ -160,7 +160,7 @@ exports.NotebookFieldsForFilter = [
     {
         type: TYPES.RANGE,
         min: WEIGHT_ARRAY[0],
-        max: WEIGHT_ARRAY[WEIGHT_ARRAY.lenght - 1],
+        max: WEIGHT_ARRAY[WEIGHT_ARRAY.length - 1],
         key_min: KEYS.WEIGHT_MIN,
         key_max: KEYS.WEIGHT_MAX,
         text: 'Вес',
