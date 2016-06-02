@@ -95,7 +95,7 @@ server.listen(PORT, function () {
 
 function getFilterFeys() {
     return _.union(
-        _.compact(_.pluck(NotebookFieldsForFilter, 'key')),
+        _.compact(_.pluck(NotebookFieldsForFilter, 'query_key')),
         _.compact(_.pluck(NotebookFieldsForFilter, 'key_min')),
         _.compact(_.pluck(NotebookFieldsForFilter, 'key_max'))
     );
