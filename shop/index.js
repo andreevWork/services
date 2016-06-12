@@ -64,9 +64,9 @@ server.get('/notebooks', function (req, res) {
         }
     });
     
-    if(_.include(sort_keys, req.query.sort)){
+    if(_.include(sort_keys, req.query.key_sort)){
         sort_by = { 
-            [req.query.sort] : req.query.sort_direction || -1
+            [req.query.key_sort] : req.query.sort_direction || -1
         };
     }
 

@@ -12,7 +12,7 @@ var mongoose = require('mongoose'),
     RATING_MIN = 0,
     RATING_MAX = 7,
     PROCESSOR_ARRAY = ['intel core i3','intel core i5','intel core i7','AMD Opteron 6300', 'AMD Opteron 5300'],
-    ORM_ARRAY = [2, 4, 8, 16, 32],
+    ORM_ARRAY = ['2', '4', '8', '16', '32'],
     VIDEO_MEMORY_ARRAY = ['512 MB', '1 GB', '2 GB', '4 GB'],
     COLOR_ARRAY = ['black', 'red', 'white', 'blue', 'green'],
 
